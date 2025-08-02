@@ -1,5 +1,8 @@
 # monarch-converter
 
+[![PyPI version](https://badge.fury.io/py/monarch-converter.svg?icon=si%3Apython)](https://badge.fury.io/py/monarch-converter) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/monarch-converter)
+
+
 I wrote a script to convert transactions downloaded from Mint so they could be uploaded into Monarch Money
 
 ## Installation
