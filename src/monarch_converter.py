@@ -6,8 +6,7 @@ from typing import Optional
 import polars as pl
 from slugify import slugify
 
-
-MAX_ROW_DEFAULT = 20000
+MAX_ROW_DEFAULT = 5000
 
 
 def split_dataframe_iter(df: pl.DataFrame, max_rows: int):
@@ -147,7 +146,7 @@ def main(
                 )
 
 
-if __name__ == "__main__":
+def main_cli() -> None:
     parser = argparse.ArgumentParser(description="Monarch Converter CLI")
     parser.add_argument("input_file", type=str, help="Path to the input CSV file")
     parser.add_argument(
