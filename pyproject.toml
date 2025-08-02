@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "monarch-converter"
-version = "0.1.0"
-description = "Add your description here"
+dynamic = ["version"]
+description = "Translate Mint.com csv's for Monarch Money Import"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -10,7 +14,19 @@ dependencies = [
     "python-slugify>=8.0.4",
 ]
 
+[project.scripts]
+monarch-converter = "monarch_converter:main_cli"
+
+[project.urls]
+Homepage = "https://github.com/rveachkc/monarch-converter"
+
 [dependency-groups]
 dev = [
     "ruff>=0.12.7",
 ]
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
