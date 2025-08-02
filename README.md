@@ -2,6 +2,12 @@
 
 I wrote a script to convert transactions downloaded from Mint so they could be uploaded into Monarch Money
 
+## Installation
+
+```bash
+pip install monarch-converter
+```
+
 ## Usage
 
 This script assumes you have a csv file downloaded from Mint.com before they shut down.
